@@ -1,4 +1,50 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+=======
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+    --font-sans: var(--font-inter);
+
+    --color-primary: var(--primary);
+    --color-secondary: var(--secondary);
+    --color-accent: var(--accent);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+
+    --radius-lg: var(--radius);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-xl: calc(var(--radius) + 4px);
+    --radius-2xl: calc(var(--radius) + 8px);
+    --radius-3xl: calc(var(--radius) + 12px);
+}
+
+
+:root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 96.1%;
+    --accent: 210 40% 96.1%;
+    --radius: 0.5rem;
+}
+
+[data-theme='dark'] {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --secondary: 217.2 32.6% 17.5%;
+    --accent: 217.2 32.6% 17.5%;
+}
+
+body {
+    @apply bg-background text-foreground;
+}
+
+>>>>>>> 36b1394 (feat: implement login page with v4 api and premium aesthetics)
 
 :root {
     --primary: #7E22CE;
@@ -9,6 +55,7 @@
     --text-muted: #6b7280;
     --accent: #10b981;
     --border: #e5e7eb;
+<<<<<<< HEAD
 
     /* Typography from theme_default.json */
     --font-family: 'Inter', sans-serif;
@@ -42,6 +89,12 @@ body {
     font-family: var(--font-family);
     font-size: var(--fs-p);
     font-weight: var(--fw-p);
+=======
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+>>>>>>> 36b1394 (feat: implement login page with v4 api and premium aesthetics)
     background: radial-gradient(circle at 100% 100%, #e0e7ff 0%, #f3f4f9 100%);
     color: var(--text-main);
     -webkit-font-smoothing: antialiased;
@@ -100,4 +153,13 @@ body {
 
 .relative {
     position: relative;
+<<<<<<< HEAD
+=======
+}
+
+.mesh-gradient {
+    background-color: #8B5CF6;
+    background-image: radial-gradient(at 0% 0%, hsla(253, 80%, 80%, 1) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(225, 80%, 70%, 1) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(300, 80%, 75%, 1) 0, transparent 50%), radial-gradient(at 0% 50%, hsla(190, 90%, 70%, 1) 0, transparent 50%), radial-gradient(at 100% 50%, hsla(270, 90%, 70%, 1) 0, transparent 50%), radial-gradient(at 0% 100%, hsla(240, 90%, 75%, 1) 0, transparent 50%), radial-gradient(at 50% 100%, hsla(200, 90%, 70%, 1) 0, transparent 50%), radial-gradient(at 100% 100%, hsla(280, 90%, 75%, 1) 0, transparent 50%);
+    transition: background-image 0.5s ease-in-out, background-color 0.5s ease-in-out;
+>>>>>>> 36b1394 (feat: implement login page with v4 api and premium aesthetics)
 }
