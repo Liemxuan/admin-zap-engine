@@ -1,0 +1,2224 @@
+{
+  "id": "1770434583540",
+  "name": "CÔNG TY CỔ PHẦN VIỆT THÁI QUỐC TẾ",
+  "timestamp": "2026-02-07T03:23:03.540Z",
+  "config": {
+    "merchantName": "pho24",
+    "projectName": "CÔNG TY CỔ PHẦN VIỆT THÁI QUỐC TẾ",
+    "businessType": 1,
+    "timezone": "SE Asia Standard Time",
+    "language": 139,
+    "country": 704,
+    "dateFormat": 1,
+    "timeFormat": 1,
+    "generatedContent": {
+      "colors": {
+        "primary": "#7E22CE",
+        "primaryName": "Purple",
+        "secondary": "#F3E8FF",
+        "secondaryName": "Light Purple",
+        "text": "#111827",
+        "background": "#FFFFFF"
+      },
+      "buttons": {
+        "primaryLabel": "Get Started",
+        "secondaryLabel": "Learn More",
+        "neutralLabel": "Cancel"
+      },
+      "card": {
+        "title": "Standard Plan",
+        "subtitle": "For small teams and startups.",
+        "priceLabel": "Price",
+        "priceValue": 49,
+        "details": "Access to all core features, standard support, and up to 10 users.",
+        "actionPrimary": "Choose Plan",
+        "actionSecondary": "Compare",
+        "tag": "Popular"
+      },
+      "chat": {
+        "userMessage": "Hi, I have a question about my account.",
+        "agentMessage": "Hello! I'd be happy to help. What can I assist you with today?",
+        "inputPlaceholder": "Type your message..."
+      },
+      "faqs": [
+        {
+          "question": "What is the refund policy?",
+          "answer": "You can request a full refund within 14 days of your purchase, no questions asked."
+        },
+        {
+          "question": "Can I upgrade my plan later?",
+          "answer": "Yes, you can upgrade, downgrade, or cancel your plan at any time from your account settings."
+        },
+        {
+          "question": "How do I contact customer support?",
+          "answer": "You can reach our support team 24/7 via email at support@example.com or through our live chat."
+        }
+      ],
+      "services": [
+        "Web Development",
+        "Mobile App Design",
+        "Cloud Hosting",
+        "Digital Marketing"
+      ],
+      "categories": [
+        "Technology",
+        "Business",
+        "Creative",
+        "Marketing"
+      ],
+      "notifications": {
+        "success": "Your changes have been saved successfully.",
+        "error": "An error occurred. Please try again later."
+      },
+      "typography": {
+        "fontFamily": "Inter",
+        "items": [
+          {
+            "name": "Heading H1",
+            "token": "text-5xl",
+            "size": "48px",
+            "weight": "font-extrabold",
+            "sample": "Standard Design System",
+            "usage": "Hero Headers"
+          },
+          {
+            "name": "Heading H2",
+            "token": "text-4xl",
+            "size": "36px",
+            "weight": "font-bold",
+            "sample": "Section Titles",
+            "usage": "Section Headers"
+          },
+          {
+            "name": "Heading H3",
+            "token": "text-2xl",
+            "size": "24px",
+            "weight": "font-bold",
+            "sample": "Component Headers",
+            "usage": "Subsection Headers"
+          },
+          {
+            "name": "Heading H4",
+            "token": "text-xl",
+            "size": "20px",
+            "weight": "font-semibold",
+            "sample": "Card Titles",
+            "usage": "Card Titles"
+          },
+          {
+            "name": "Heading H5",
+            "token": "text-lg",
+            "size": "18px",
+            "weight": "font-semibold",
+            "sample": "Sub-section headings",
+            "usage": "Sub-headers"
+          },
+          {
+            "name": "Heading H6",
+            "token": "text-base",
+            "size": "16px",
+            "weight": "font-semibold",
+            "sample": "Group labels or tertiary titles",
+            "usage": "Tertiary Headers"
+          },
+          {
+            "name": "Paragraph",
+            "token": "text-base",
+            "size": "16px",
+            "weight": "font-normal",
+            "sample": "This is the standard body text for paragraphs and descriptions.",
+            "usage": "Body Text"
+          },
+          {
+            "name": "Caption",
+            "token": "text-sm",
+            "size": "14px",
+            "weight": "font-medium",
+            "sample": "Metadata and small print",
+            "usage": "Metadata & Labels"
+          },
+          {
+            "name": "Label",
+            "token": "text-xs",
+            "size": "12px",
+            "weight": "font-bold",
+            "sample": "FORM LABEL",
+            "usage": "Form Labels"
+          }
+        ]
+      },
+      "icons": [
+        {
+          "id": "menu",
+          "name": "Menu",
+          "iconName": "Menu",
+          "category": "Navigation",
+          "tags": [
+            "hamburger",
+            "list",
+            "nav"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "home",
+          "name": "Home",
+          "iconName": "Home",
+          "category": "Navigation",
+          "tags": [
+            "house",
+            "dashboard"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "search",
+          "name": "Search",
+          "iconName": "Search",
+          "category": "Navigation",
+          "tags": [
+            "find",
+            "magnifier"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "user",
+          "name": "User",
+          "iconName": "User",
+          "category": "Navigation",
+          "tags": [
+            "profile",
+            "account",
+            "person"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "settings",
+          "name": "Settings",
+          "iconName": "Settings",
+          "category": "Navigation",
+          "tags": [
+            "gear",
+            "config",
+            "preferences"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "chevron-down",
+          "name": "Chevron Down",
+          "iconName": "ChevronDown",
+          "category": "Arrows",
+          "tags": [
+            "arrow",
+            "drop"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "chevron-right",
+          "name": "Chevron Right",
+          "iconName": "ChevronRight",
+          "category": "Arrows",
+          "tags": [
+            "arrow",
+            "next"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "chevron-left",
+          "name": "Chevron Left",
+          "iconName": "ChevronLeft",
+          "category": "Arrows",
+          "tags": [
+            "arrow",
+            "back"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "chevron-up",
+          "name": "Chevron Up",
+          "iconName": "ChevronUp",
+          "category": "Arrows",
+          "tags": [
+            "arrow",
+            "top"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "arrow-right",
+          "name": "Arrow Right",
+          "iconName": "ArrowRight",
+          "category": "Arrows",
+          "tags": [
+            "direction",
+            "next"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "arrow-left",
+          "name": "Arrow Left",
+          "iconName": "ArrowLeft",
+          "category": "Arrows",
+          "tags": [
+            "direction",
+            "back"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "x",
+          "name": "Close",
+          "iconName": "X",
+          "category": "UI Actions",
+          "tags": [
+            "cancel",
+            "remove",
+            "delete"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "check",
+          "name": "Check",
+          "iconName": "Check",
+          "category": "UI Actions",
+          "tags": [
+            "success",
+            "done",
+            "tick"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "plus",
+          "name": "Plus",
+          "iconName": "Plus",
+          "category": "UI Actions",
+          "tags": [
+            "add",
+            "create",
+            "new"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "trash-2",
+          "name": "Trash",
+          "iconName": "Trash2",
+          "category": "UI Actions",
+          "tags": [
+            "delete",
+            "remove",
+            "bin"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "edit-2",
+          "name": "Edit",
+          "iconName": "Edit2",
+          "category": "UI Actions",
+          "tags": [
+            "pencil",
+            "change",
+            "modify"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "more-vertical",
+          "name": "More",
+          "iconName": "MoreVertical",
+          "category": "UI Actions",
+          "tags": [
+            "dots",
+            "menu",
+            "options"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "filter",
+          "name": "Filter",
+          "iconName": "Filter",
+          "category": "UI Actions",
+          "tags": [
+            "sort",
+            "refine"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "download",
+          "name": "Download",
+          "iconName": "Download",
+          "category": "UI Actions",
+          "tags": [
+            "save",
+            "export"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "upload",
+          "name": "Upload",
+          "iconName": "Upload",
+          "category": "UI Actions",
+          "tags": [
+            "import",
+            "cloud"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "share-2",
+          "name": "Share",
+          "iconName": "Share2",
+          "category": "UI Actions",
+          "tags": [
+            "social",
+            "send"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "external-link",
+          "name": "External Link",
+          "iconName": "ExternalLink",
+          "category": "UI Actions",
+          "tags": [
+            "open",
+            "new tab"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "shopping-cart",
+          "name": "Cart",
+          "iconName": "ShoppingCart",
+          "category": "Commerce",
+          "tags": [
+            "buy",
+            "store"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "credit-card",
+          "name": "Credit Card",
+          "iconName": "CreditCard",
+          "category": "Commerce",
+          "tags": [
+            "payment",
+            "money"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "dollar-sign",
+          "name": "Dollar",
+          "iconName": "DollarSign",
+          "category": "Commerce",
+          "tags": [
+            "price",
+            "money",
+            "cost"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "shopping-bag",
+          "name": "Bag",
+          "iconName": "ShoppingBag",
+          "category": "Commerce",
+          "tags": [
+            "store",
+            "purchase"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "tag",
+          "name": "Tag",
+          "iconName": "Tag",
+          "category": "Commerce",
+          "tags": [
+            "label",
+            "category",
+            "price"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "percent",
+          "name": "Percent",
+          "iconName": "Percent",
+          "category": "Commerce",
+          "tags": [
+            "discount",
+            "sale"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "gift",
+          "name": "Gift",
+          "iconName": "Gift",
+          "category": "Commerce",
+          "tags": [
+            "present",
+            "reward"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "package",
+          "name": "Package",
+          "iconName": "Package",
+          "category": "Commerce",
+          "tags": [
+            "box",
+            "shipping"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "truck",
+          "name": "Truck",
+          "iconName": "Truck",
+          "category": "Commerce",
+          "tags": [
+            "shipping",
+            "delivery"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "mail",
+          "name": "Mail",
+          "iconName": "Mail",
+          "category": "Communication",
+          "tags": [
+            "email",
+            "inbox",
+            "message"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "message-square",
+          "name": "Message",
+          "iconName": "MessageSquare",
+          "category": "Communication",
+          "tags": [
+            "chat",
+            "comment"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "phone",
+          "name": "Phone",
+          "iconName": "Phone",
+          "category": "Communication",
+          "tags": [
+            "call",
+            "contact"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "bell",
+          "name": "Bell",
+          "iconName": "Bell",
+          "category": "Communication",
+          "tags": [
+            "notification",
+            "alert"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "calendar",
+          "name": "Calendar",
+          "iconName": "Calendar",
+          "category": "Communication",
+          "tags": [
+            "date",
+            "schedule"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "clock",
+          "name": "Clock",
+          "iconName": "Clock",
+          "category": "Communication",
+          "tags": [
+            "time",
+            "schedule"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "bar-chart-2",
+          "name": "Bar Chart",
+          "iconName": "BarChart2",
+          "category": "Data",
+          "tags": [
+            "stats",
+            "analytics"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "pie-chart",
+          "name": "Pie Chart",
+          "iconName": "PieChart",
+          "category": "Data",
+          "tags": [
+            "stats",
+            "analytics"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "trending-up",
+          "name": "Trending Up",
+          "iconName": "TrendingUp",
+          "category": "Data",
+          "tags": [
+            "growth",
+            "increase"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "activity",
+          "name": "Activity",
+          "iconName": "Activity",
+          "category": "Data",
+          "tags": [
+            "pulse",
+            "health"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "database",
+          "name": "Database",
+          "iconName": "Database",
+          "category": "Data",
+          "tags": [
+            "storage",
+            "server"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "file-text",
+          "name": "File",
+          "iconName": "FileText",
+          "category": "Data",
+          "tags": [
+            "document",
+            "page"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "folder",
+          "name": "Folder",
+          "iconName": "Folder",
+          "category": "Data",
+          "tags": [
+            "directory",
+            "group"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "iconName": "Image",
+          "category": "Media",
+          "tags": [
+            "photo",
+            "picture"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "camera",
+          "name": "Camera",
+          "iconName": "Camera",
+          "category": "Media",
+          "tags": [
+            "photo",
+            "video"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "video",
+          "name": "Video",
+          "iconName": "Video",
+          "category": "Media",
+          "tags": [
+            "movie",
+            "film"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "music",
+          "name": "Music",
+          "iconName": "Music",
+          "category": "Media",
+          "tags": [
+            "audio",
+            "sound"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "play-circle",
+          "name": "Play",
+          "iconName": "PlayCircle",
+          "category": "Media",
+          "tags": [
+            "start",
+            "video"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "smartphone",
+          "name": "Smartphone",
+          "iconName": "Smartphone",
+          "category": "Devices",
+          "tags": [
+            "mobile",
+            "phone"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "monitor",
+          "name": "Monitor",
+          "iconName": "Monitor",
+          "category": "Devices",
+          "tags": [
+            "screen",
+            "desktop"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "lock",
+          "name": "Lock",
+          "iconName": "Lock",
+          "category": "Security",
+          "tags": [
+            "secure",
+            "password"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "unlock",
+          "name": "Unlock",
+          "iconName": "Unlock",
+          "category": "Security",
+          "tags": [
+            "open",
+            "access"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "shield",
+          "name": "Shield",
+          "iconName": "Shield",
+          "category": "Security",
+          "tags": [
+            "protect",
+            "safety"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "key",
+          "name": "Key",
+          "iconName": "Key",
+          "category": "Security",
+          "tags": [
+            "access",
+            "password"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "eye",
+          "name": "Eye",
+          "iconName": "Eye",
+          "category": "Security",
+          "tags": [
+            "view",
+            "visible"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "eye-off",
+          "name": "Eye Off",
+          "iconName": "EyeOff",
+          "category": "Security",
+          "tags": [
+            "hide",
+            "invisible"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "alert-circle",
+          "name": "Alert",
+          "iconName": "AlertCircle",
+          "category": "System",
+          "tags": [
+            "warning",
+            "error"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "info",
+          "name": "Info",
+          "iconName": "Info",
+          "category": "System",
+          "tags": [
+            "help",
+            "details"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "help-circle",
+          "name": "Help",
+          "iconName": "HelpCircle",
+          "category": "System",
+          "tags": [
+            "question",
+            "support"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "log-out",
+          "name": "Log Out",
+          "iconName": "LogOut",
+          "category": "System",
+          "tags": [
+            "exit",
+            "sign out"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "map-pin",
+          "name": "Map Pin",
+          "iconName": "MapPin",
+          "category": "Misc",
+          "tags": [
+            "location",
+            "address"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "globe",
+          "name": "Globe",
+          "iconName": "Globe",
+          "category": "Misc",
+          "tags": [
+            "world",
+            "internet"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "flag",
+          "name": "Flag",
+          "iconName": "Flag",
+          "category": "Misc",
+          "tags": [
+            "report",
+            "country"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "bookmark",
+          "name": "Bookmark",
+          "iconName": "Bookmark",
+          "category": "Misc",
+          "tags": [
+            "save",
+            "favorite"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "heart",
+          "name": "Heart",
+          "iconName": "Heart",
+          "category": "Misc",
+          "tags": [
+            "like",
+            "love"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "star",
+          "name": "Star",
+          "iconName": "Star",
+          "category": "Misc",
+          "tags": [
+            "favorite",
+            "rating"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "thumbs-up",
+          "name": "Thumbs Up",
+          "iconName": "ThumbsUp",
+          "category": "Misc",
+          "tags": [
+            "like",
+            "approve"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "zap",
+          "name": "Zap",
+          "iconName": "Zap",
+          "category": "Misc",
+          "tags": [
+            "flash",
+            "energy"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "layers",
+          "name": "Layers",
+          "iconName": "Layers",
+          "category": "Misc",
+          "tags": [
+            "stack",
+            "design"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "layout",
+          "name": "Layout",
+          "iconName": "Layout",
+          "category": "Misc",
+          "tags": [
+            "design",
+            "grid"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "grid",
+          "name": "Grid",
+          "iconName": "Grid",
+          "category": "Misc",
+          "tags": [
+            "layout",
+            "view"
+          ],
+          "type": "lucide"
+        },
+        {
+          "id": "list",
+          "name": "List",
+          "iconName": "List",
+          "category": "Misc",
+          "tags": [
+            "view",
+            "menu"
+          ],
+          "type": "lucide"
+        }
+      ],
+      "pricing": [
+        {
+          "title": "Basic",
+          "price": "$19",
+          "period": "month",
+          "features": [
+            "5 Projects",
+            "Basic Support",
+            "Community Access"
+          ],
+          "buttonLabel": "Start Basic",
+          "isPopular": false
+        },
+        {
+          "title": "Pro",
+          "price": "$49",
+          "period": "month",
+          "features": [
+            "Unlimited Projects",
+            "Priority Support",
+            "Advanced Analytics",
+            "Custom Domains"
+          ],
+          "buttonLabel": "Go Pro",
+          "isPopular": true
+        }
+      ],
+      "stats": [
+        {
+          "label": "Active Users",
+          "value": "10K+"
+        },
+        {
+          "label": "Total Projects",
+          "value": "250+"
+        },
+        {
+          "label": "Uptime",
+          "value": "99.9%"
+        }
+      ],
+      "testimonials": [
+        {
+          "quote": "The ZAP Design Engine has completely transformed how we build and iterate on our brand identities. It's incredibly fast and intuitive.",
+          "author": "Sarah J.",
+          "role": "Product Designer @ TechFlow"
+        },
+        {
+          "quote": "Layered state management makes complex customization a breeze. This is exactly what we needed for our multi-tenant platform.",
+          "author": "Marcus V.",
+          "role": "CTO @ Nexus"
+        }
+      ]
+    },
+    "version": "1.0.3",
+    "logo": {
+      "url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBmaWxsPSJub25lIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIwIiBmaWxsPSIjN0UyMkNFIi8+PHBhdGggZD0iTTUwIDIwTDgwIDcwSDIwTDUwIDIwWiIgZmlsbD0iI0ZGRkZGRiIvPjwvc3ZnPg==",
+      "description": "Standard Placeholder"
+    }
+  },
+  "theme": {
+    "primary": "#059669",
+    "secondary": "#D1FAE5",
+    "lightText": "#FFFFFF",
+    "darkText": "#064E3B",
+    "grayText": "#64748B",
+    "background": "#FFFFFF",
+    "background2": "#F0FDF4",
+    "background3": "#DCFCE7",
+    "primaryBtnText": "#FFFFFF",
+    "secondaryBtnText": "#064E3B",
+    "tertiaryBtnText": "#059669",
+    "fontFamily": "Inter",
+    "secondaryFontFamily": "Inter",
+    "borderRadius": 12,
+    "btnPaddingX": 24,
+    "btnPaddingY": 12,
+    "buttonStyle": "flat",
+    "fillMode": "solid",
+    "gradientAngle": 135,
+    "depth": 1,
+    "iconGap": 8,
+    "buttonHoverOpacity": 90,
+    "inputBg": "#FFFFFF",
+    "inputFilledBg": "#F3F4F6",
+    "inputBorder": "#A7F3D0",
+    "inputPaddingX": 16,
+    "inputPaddingY": 12,
+    "layoutGap": 32,
+    "sectionPadding": 48,
+    "activeColor": "#059669",
+    "hoverOpacity": 10,
+    "formLabelStyle": "top",
+    "formVariant": "outlined",
+    "formDensity": "comfortable",
+    "formPlaceholderColor": "#9CA3AF",
+    "formTextColor": "#1C1C1E",
+    "formLabelColor": "#374151",
+    "formErrorColor": "#EF4444",
+    "formRingWidth": 4,
+    "formSimulateData": false
+  },
+  "docs": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "lastModified": 1770434578911,
+      "blocks": [
+        {
+          "id": "d1",
+          "type": "h1",
+          "content": "Merchant Overview"
+        },
+        {
+          "id": "d2",
+          "type": "paragraph",
+          "content": "Technical specification for CÔNG TY CỔ PHẦN VIỆT THÁI QUỐC TẾ. Use the sidebar to navigate to specific asset registries."
+        },
+        {
+          "id": "div1",
+          "type": "divider",
+          "content": ""
+        },
+        {
+          "id": "d_live_overview",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "live-overview"
+          }
+        },
+        {
+          "id": "div_live",
+          "type": "divider",
+          "content": ""
+        },
+        {
+          "id": "d3",
+          "type": "h2",
+          "content": "Quick Stats"
+        },
+        {
+          "id": "p_stats",
+          "type": "paragraph",
+          "content": "• Primary Color: #7E22CE\n• Font Family: Inter\n• Icon Count: 73\n• Border Radius: 12px"
+        },
+        {
+          "id": "div2",
+          "type": "divider",
+          "content": ""
+        },
+        {
+          "id": "d4",
+          "type": "h2",
+          "content": "Theme Physics"
+        },
+        {
+          "id": "p_phys",
+          "type": "paragraph",
+          "content": "Global settings determining the shape and spacing of the UI."
+        },
+        {
+          "id": "p_phys_r",
+          "type": "paragraph",
+          "content": "• Border Radius: 12px"
+        },
+        {
+          "id": "p_phys_px",
+          "type": "paragraph",
+          "content": "• Button Padding X: 24px"
+        },
+        {
+          "id": "p_phys_py",
+          "type": "paragraph",
+          "content": "• Button Padding Y: 12px"
+        }
+      ]
+    },
+    {
+      "id": "colors",
+      "title": "Colors",
+      "lastModified": 1770434578911,
+      "blocks": [
+        {
+          "id": "c_h1",
+          "type": "h1",
+          "content": "Color Palette"
+        },
+        {
+          "id": "c_p1",
+          "type": "paragraph",
+          "content": "The semantic color system defines the brand identity and UI state communication."
+        },
+        {
+          "id": "c_div1",
+          "type": "divider",
+          "content": ""
+        },
+        {
+          "id": "c_brand_view",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "brand-colors"
+          }
+        }
+      ]
+    },
+    {
+      "id": "typography",
+      "title": "Typography",
+      "lastModified": 1770434578911,
+      "blocks": [
+        {
+          "id": "t_h1",
+          "type": "h1",
+          "content": "Typography"
+        },
+        {
+          "id": "t_p1",
+          "type": "paragraph",
+          "content": "Primary Typeface: Inter"
+        },
+        {
+          "id": "t_div1",
+          "type": "divider",
+          "content": ""
+        },
+        {
+          "id": "t_system_view",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "typography-system"
+          }
+        }
+      ]
+    },
+    {
+      "id": "buttons",
+      "title": "Buttons",
+      "lastModified": 1770434578911,
+      "blocks": [
+        {
+          "id": "b_h1",
+          "type": "h1",
+          "content": "Buttons & Actions"
+        },
+        {
+          "id": "b_p1",
+          "type": "paragraph",
+          "content": "Standard button styles using the \"flat\" variant with solid fill."
+        },
+        {
+          "id": "b_div1",
+          "type": "divider",
+          "content": ""
+        },
+        {
+          "id": "b_system_view",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "buttons-system"
+          }
+        }
+      ]
+    },
+    {
+      "id": "icons",
+      "title": "Icons",
+      "lastModified": 1770434578911,
+      "blocks": [
+        {
+          "id": "i_h1",
+          "type": "h1",
+          "content": "Iconography"
+        },
+        {
+          "id": "i_p1",
+          "type": "paragraph",
+          "content": "System icons used for navigation and actions. Total count: 73"
+        },
+        {
+          "id": "i_div1",
+          "type": "divider",
+          "content": ""
+        },
+        {
+          "id": "i_library_view",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "icons-library",
+            "icons": [
+              {
+                "id": "menu",
+                "name": "Menu",
+                "iconName": "Menu",
+                "category": "Navigation",
+                "tags": [
+                  "hamburger",
+                  "list",
+                  "nav"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "home",
+                "name": "Home",
+                "iconName": "Home",
+                "category": "Navigation",
+                "tags": [
+                  "house",
+                  "dashboard"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "search",
+                "name": "Search",
+                "iconName": "Search",
+                "category": "Navigation",
+                "tags": [
+                  "find",
+                  "magnifier"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "user",
+                "name": "User",
+                "iconName": "User",
+                "category": "Navigation",
+                "tags": [
+                  "profile",
+                  "account",
+                  "person"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "settings",
+                "name": "Settings",
+                "iconName": "Settings",
+                "category": "Navigation",
+                "tags": [
+                  "gear",
+                  "config",
+                  "preferences"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "chevron-down",
+                "name": "Chevron Down",
+                "iconName": "ChevronDown",
+                "category": "Arrows",
+                "tags": [
+                  "arrow",
+                  "drop"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "chevron-right",
+                "name": "Chevron Right",
+                "iconName": "ChevronRight",
+                "category": "Arrows",
+                "tags": [
+                  "arrow",
+                  "next"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "chevron-left",
+                "name": "Chevron Left",
+                "iconName": "ChevronLeft",
+                "category": "Arrows",
+                "tags": [
+                  "arrow",
+                  "back"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "chevron-up",
+                "name": "Chevron Up",
+                "iconName": "ChevronUp",
+                "category": "Arrows",
+                "tags": [
+                  "arrow",
+                  "top"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "arrow-right",
+                "name": "Arrow Right",
+                "iconName": "ArrowRight",
+                "category": "Arrows",
+                "tags": [
+                  "direction",
+                  "next"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "arrow-left",
+                "name": "Arrow Left",
+                "iconName": "ArrowLeft",
+                "category": "Arrows",
+                "tags": [
+                  "direction",
+                  "back"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "x",
+                "name": "Close",
+                "iconName": "X",
+                "category": "UI Actions",
+                "tags": [
+                  "cancel",
+                  "remove",
+                  "delete"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "check",
+                "name": "Check",
+                "iconName": "Check",
+                "category": "UI Actions",
+                "tags": [
+                  "success",
+                  "done",
+                  "tick"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "plus",
+                "name": "Plus",
+                "iconName": "Plus",
+                "category": "UI Actions",
+                "tags": [
+                  "add",
+                  "create",
+                  "new"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "trash-2",
+                "name": "Trash",
+                "iconName": "Trash2",
+                "category": "UI Actions",
+                "tags": [
+                  "delete",
+                  "remove",
+                  "bin"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "edit-2",
+                "name": "Edit",
+                "iconName": "Edit2",
+                "category": "UI Actions",
+                "tags": [
+                  "pencil",
+                  "change",
+                  "modify"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "more-vertical",
+                "name": "More",
+                "iconName": "MoreVertical",
+                "category": "UI Actions",
+                "tags": [
+                  "dots",
+                  "menu",
+                  "options"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "filter",
+                "name": "Filter",
+                "iconName": "Filter",
+                "category": "UI Actions",
+                "tags": [
+                  "sort",
+                  "refine"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "download",
+                "name": "Download",
+                "iconName": "Download",
+                "category": "UI Actions",
+                "tags": [
+                  "save",
+                  "export"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "upload",
+                "name": "Upload",
+                "iconName": "Upload",
+                "category": "UI Actions",
+                "tags": [
+                  "import",
+                  "cloud"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "share-2",
+                "name": "Share",
+                "iconName": "Share2",
+                "category": "UI Actions",
+                "tags": [
+                  "social",
+                  "send"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "external-link",
+                "name": "External Link",
+                "iconName": "ExternalLink",
+                "category": "UI Actions",
+                "tags": [
+                  "open",
+                  "new tab"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "shopping-cart",
+                "name": "Cart",
+                "iconName": "ShoppingCart",
+                "category": "Commerce",
+                "tags": [
+                  "buy",
+                  "store"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "credit-card",
+                "name": "Credit Card",
+                "iconName": "CreditCard",
+                "category": "Commerce",
+                "tags": [
+                  "payment",
+                  "money"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "dollar-sign",
+                "name": "Dollar",
+                "iconName": "DollarSign",
+                "category": "Commerce",
+                "tags": [
+                  "price",
+                  "money",
+                  "cost"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "shopping-bag",
+                "name": "Bag",
+                "iconName": "ShoppingBag",
+                "category": "Commerce",
+                "tags": [
+                  "store",
+                  "purchase"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "tag",
+                "name": "Tag",
+                "iconName": "Tag",
+                "category": "Commerce",
+                "tags": [
+                  "label",
+                  "category",
+                  "price"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "percent",
+                "name": "Percent",
+                "iconName": "Percent",
+                "category": "Commerce",
+                "tags": [
+                  "discount",
+                  "sale"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "gift",
+                "name": "Gift",
+                "iconName": "Gift",
+                "category": "Commerce",
+                "tags": [
+                  "present",
+                  "reward"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "package",
+                "name": "Package",
+                "iconName": "Package",
+                "category": "Commerce",
+                "tags": [
+                  "box",
+                  "shipping"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "truck",
+                "name": "Truck",
+                "iconName": "Truck",
+                "category": "Commerce",
+                "tags": [
+                  "shipping",
+                  "delivery"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "mail",
+                "name": "Mail",
+                "iconName": "Mail",
+                "category": "Communication",
+                "tags": [
+                  "email",
+                  "inbox",
+                  "message"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "message-square",
+                "name": "Message",
+                "iconName": "MessageSquare",
+                "category": "Communication",
+                "tags": [
+                  "chat",
+                  "comment"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "phone",
+                "name": "Phone",
+                "iconName": "Phone",
+                "category": "Communication",
+                "tags": [
+                  "call",
+                  "contact"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "bell",
+                "name": "Bell",
+                "iconName": "Bell",
+                "category": "Communication",
+                "tags": [
+                  "notification",
+                  "alert"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "calendar",
+                "name": "Calendar",
+                "iconName": "Calendar",
+                "category": "Communication",
+                "tags": [
+                  "date",
+                  "schedule"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "clock",
+                "name": "Clock",
+                "iconName": "Clock",
+                "category": "Communication",
+                "tags": [
+                  "time",
+                  "schedule"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "bar-chart-2",
+                "name": "Bar Chart",
+                "iconName": "BarChart2",
+                "category": "Data",
+                "tags": [
+                  "stats",
+                  "analytics"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "pie-chart",
+                "name": "Pie Chart",
+                "iconName": "PieChart",
+                "category": "Data",
+                "tags": [
+                  "stats",
+                  "analytics"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "trending-up",
+                "name": "Trending Up",
+                "iconName": "TrendingUp",
+                "category": "Data",
+                "tags": [
+                  "growth",
+                  "increase"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "activity",
+                "name": "Activity",
+                "iconName": "Activity",
+                "category": "Data",
+                "tags": [
+                  "pulse",
+                  "health"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "database",
+                "name": "Database",
+                "iconName": "Database",
+                "category": "Data",
+                "tags": [
+                  "storage",
+                  "server"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "file-text",
+                "name": "File",
+                "iconName": "FileText",
+                "category": "Data",
+                "tags": [
+                  "document",
+                  "page"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "folder",
+                "name": "Folder",
+                "iconName": "Folder",
+                "category": "Data",
+                "tags": [
+                  "directory",
+                  "group"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "image",
+                "name": "Image",
+                "iconName": "Image",
+                "category": "Media",
+                "tags": [
+                  "photo",
+                  "picture"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "camera",
+                "name": "Camera",
+                "iconName": "Camera",
+                "category": "Media",
+                "tags": [
+                  "photo",
+                  "video"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "video",
+                "name": "Video",
+                "iconName": "Video",
+                "category": "Media",
+                "tags": [
+                  "movie",
+                  "film"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "music",
+                "name": "Music",
+                "iconName": "Music",
+                "category": "Media",
+                "tags": [
+                  "audio",
+                  "sound"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "play-circle",
+                "name": "Play",
+                "iconName": "PlayCircle",
+                "category": "Media",
+                "tags": [
+                  "start",
+                  "video"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "smartphone",
+                "name": "Smartphone",
+                "iconName": "Smartphone",
+                "category": "Devices",
+                "tags": [
+                  "mobile",
+                  "phone"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "monitor",
+                "name": "Monitor",
+                "iconName": "Monitor",
+                "category": "Devices",
+                "tags": [
+                  "screen",
+                  "desktop"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "lock",
+                "name": "Lock",
+                "iconName": "Lock",
+                "category": "Security",
+                "tags": [
+                  "secure",
+                  "password"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "unlock",
+                "name": "Unlock",
+                "iconName": "Unlock",
+                "category": "Security",
+                "tags": [
+                  "open",
+                  "access"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "shield",
+                "name": "Shield",
+                "iconName": "Shield",
+                "category": "Security",
+                "tags": [
+                  "protect",
+                  "safety"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "key",
+                "name": "Key",
+                "iconName": "Key",
+                "category": "Security",
+                "tags": [
+                  "access",
+                  "password"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "eye",
+                "name": "Eye",
+                "iconName": "Eye",
+                "category": "Security",
+                "tags": [
+                  "view",
+                  "visible"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "eye-off",
+                "name": "Eye Off",
+                "iconName": "EyeOff",
+                "category": "Security",
+                "tags": [
+                  "hide",
+                  "invisible"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "alert-circle",
+                "name": "Alert",
+                "iconName": "AlertCircle",
+                "category": "System",
+                "tags": [
+                  "warning",
+                  "error"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "info",
+                "name": "Info",
+                "iconName": "Info",
+                "category": "System",
+                "tags": [
+                  "help",
+                  "details"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "help-circle",
+                "name": "Help",
+                "iconName": "HelpCircle",
+                "category": "System",
+                "tags": [
+                  "question",
+                  "support"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "log-out",
+                "name": "Log Out",
+                "iconName": "LogOut",
+                "category": "System",
+                "tags": [
+                  "exit",
+                  "sign out"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "map-pin",
+                "name": "Map Pin",
+                "iconName": "MapPin",
+                "category": "Misc",
+                "tags": [
+                  "location",
+                  "address"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "globe",
+                "name": "Globe",
+                "iconName": "Globe",
+                "category": "Misc",
+                "tags": [
+                  "world",
+                  "internet"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "flag",
+                "name": "Flag",
+                "iconName": "Flag",
+                "category": "Misc",
+                "tags": [
+                  "report",
+                  "country"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "bookmark",
+                "name": "Bookmark",
+                "iconName": "Bookmark",
+                "category": "Misc",
+                "tags": [
+                  "save",
+                  "favorite"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "heart",
+                "name": "Heart",
+                "iconName": "Heart",
+                "category": "Misc",
+                "tags": [
+                  "like",
+                  "love"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "star",
+                "name": "Star",
+                "iconName": "Star",
+                "category": "Misc",
+                "tags": [
+                  "favorite",
+                  "rating"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "thumbs-up",
+                "name": "Thumbs Up",
+                "iconName": "ThumbsUp",
+                "category": "Misc",
+                "tags": [
+                  "like",
+                  "approve"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "zap",
+                "name": "Zap",
+                "iconName": "Zap",
+                "category": "Misc",
+                "tags": [
+                  "flash",
+                  "energy"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "layers",
+                "name": "Layers",
+                "iconName": "Layers",
+                "category": "Misc",
+                "tags": [
+                  "stack",
+                  "design"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "layout",
+                "name": "Layout",
+                "iconName": "Layout",
+                "category": "Misc",
+                "tags": [
+                  "design",
+                  "grid"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "grid",
+                "name": "Grid",
+                "iconName": "Grid",
+                "category": "Misc",
+                "tags": [
+                  "layout",
+                  "view"
+                ],
+                "type": "lucide"
+              },
+              {
+                "id": "list",
+                "name": "List",
+                "iconName": "List",
+                "category": "Misc",
+                "tags": [
+                  "view",
+                  "menu"
+                ],
+                "type": "lucide"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "forms",
+      "title": "Forms",
+      "lastModified": 1770434578911,
+      "blocks": [
+        {
+          "id": "f_h1",
+          "type": "h1",
+          "content": "Form Elements"
+        },
+        {
+          "id": "f_p1",
+          "type": "paragraph",
+          "content": "Standardized input components reflecting the current design tokens. Style: outlined, Label: top"
+        },
+        {
+          "id": "f_div1",
+          "type": "divider",
+          "content": ""
+        },
+        {
+          "id": "f_h2_text",
+          "type": "h2",
+          "content": "Text Inputs"
+        },
+        {
+          "id": "f_std",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "form-element",
+            "elementType": "text-input"
+          }
+        },
+        {
+          "id": "f_email",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "form-element",
+            "elementType": "email-input"
+          }
+        },
+        {
+          "id": "f_pass",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "form-element",
+            "elementType": "password-input"
+          }
+        },
+        {
+          "id": "f_h2_spec",
+          "type": "h2",
+          "content": "Specialized Inputs"
+        },
+        {
+          "id": "f_phone",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "form-element",
+            "elementType": "phone-input"
+          }
+        },
+        {
+          "id": "f_curr",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "form-element",
+            "elementType": "currency-input"
+          }
+        },
+        {
+          "id": "f_step",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "form-element",
+            "elementType": "stepper"
+          }
+        },
+        {
+          "id": "f_h2_sel",
+          "type": "h2",
+          "content": "Selection Controls"
+        },
+        {
+          "id": "f_check",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "form-element",
+            "elementType": "checkbox"
+          }
+        },
+        {
+          "id": "f_radio",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "form-element",
+            "elementType": "radio"
+          }
+        },
+        {
+          "id": "f_toggle",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "form-element",
+            "elementType": "toggle"
+          }
+        },
+        {
+          "id": "f_seg",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "form-element",
+            "elementType": "segment"
+          }
+        },
+        {
+          "id": "f_h2_range",
+          "type": "h2",
+          "content": "Range"
+        },
+        {
+          "id": "f_slider",
+          "type": "component",
+          "content": "",
+          "metadata": {
+            "subtype": "form-element",
+            "elementType": "slider"
+          }
+        }
+      ]
+    }
+  ]
+}
