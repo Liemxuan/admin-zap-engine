@@ -16,7 +16,7 @@
     width: 100%;
     max-width: 540px;
     /* Increased width from 480px */
-    padding: 80px 70px;
+    padding: 20px 30px;
     /* Increased padding for better hierarchy */
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
@@ -30,14 +30,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 32px;
+    margin: 0 auto;
     box-shadow: 0 10px 20px -5px rgba(17, 24, 39, 0.3);
 }
 
 .login-title {
-    font-size: 42px;
+    font-size: var(--fs-h1);
     /* Larger title */
-    font-weight: 800;
+    font-weight: var(--fw-h1);
     color: #111827;
     margin-bottom: 12px;
     letter-spacing: -0.02em;
@@ -45,16 +45,40 @@
 
 .login-subtitle {
     color: #616161;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: var(--fs-p);
+    font-weight: var(--fw-caption);
     margin-bottom: 50px;
 }
 
 /* Form Fields */
+.error-alert {
+    background-color: #fff1f2;
+    border: 1px solid #fee2e2;
+    border-radius: 12px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    animation: fadeInUp 0.4s ease-out;
+}
+
+.error-alert-icon {
+    color: #ef4444;
+    display: flex;
+    align-items: center;
+}
+
+.error-alert-message {
+    color: #ef4444;
+    font-size: 13px;
+    font-weight: 700;
+}
+
 .form-label {
     display: block;
-    font-size: 12px;
-    font-weight: 800;
+    font-size: var(--fs-label);
+    font-weight: var(--fw-label);
     text-transform: uppercase;
     color: #6b7280;
     margin-bottom: 12px;
@@ -91,8 +115,8 @@
     /* Larger border radius */
     padding: 18px 20px 18px 56px;
     /* Larger padding */
-    font-size: 16px;
-    font-weight: 500;
+    font-size: var(--fs-p);
+    font-weight: var(--fw-caption);
     color: #111827;
     outline: none;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -145,8 +169,8 @@
     color: white;
     padding: 20px 30px;
     border-radius: 18px;
-    font-weight: 700;
-    font-size: 17px;
+    font-weight: var(--fw-h2);
+    font-size: var(--fs-p);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,17 +195,76 @@
 .login-footer {
     margin-top: 50px;
     text-align: center;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: var(--fs-label);
+    font-weight: var(--fw-h6);
     color: #94a3b8;
 }
 
 .login-footer span:last-child {
-    color: #0f172a;
+    color: #111827;
     cursor: pointer;
     margin-left: 4px;
 }
 
 .login-footer span:last-child:hover {
     text-decoration: underline;
+}
+
+/* Remember Me Checkbox */
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 8px 0 32px;
+    cursor: pointer;
+    user-select: none;
+    width: fit-content;
+}
+
+.checkbox-custom {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #e5e7eb;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    background: white;
+}
+
+.remember-me input {
+    display: none;
+}
+
+.remember-me input:checked+.checkbox-custom {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.checkbox-icon {
+    color: white;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.remember-me input:checked+.checkbox-custom .checkbox-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.remember-label {
+    font-size: var(--fs-caption);
+    font-weight: var(--fw-h6);
+    color: #64748b;
+    transition: color 0.2s ease;
+}
+
+.remember-me:hover .checkbox-custom {
+    border-color: var(--primary);
+}
+
+.remember-me:hover .remember-label {
+    color: #111827;
 }

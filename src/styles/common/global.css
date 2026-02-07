@@ -9,6 +9,27 @@
     --text-muted: #6b7280;
     --accent: #10b981;
     --border: #e5e7eb;
+
+    /* Typography from theme_default.json */
+    --font-family: 'Inter', sans-serif;
+    --fs-h1: 48px;
+    --fw-h1: 800;
+    --fs-h2: 36px;
+    --fw-h2: 700;
+    --fs-h3: 24px;
+    --fw-h3: 700;
+    --fs-h4: 20px;
+    --fw-h4: 600;
+    --fs-h5: 18px;
+    --fw-h5: 600;
+    --fs-h6: 16px;
+    --fw-h6: 600;
+    --fs-p: 16px;
+    --fw-p: 400;
+    --fs-caption: 14px;
+    --fw-caption: 500;
+    --fs-label: 12px;
+    --fw-label: 700;
 }
 
 * {
@@ -18,7 +39,9 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-family);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-p);
     background: radial-gradient(circle at 100% 100%, #e0e7ff 0%, #f3f4f9 100%);
     color: var(--text-main);
     -webkit-font-smoothing: antialiased;

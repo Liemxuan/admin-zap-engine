@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Building2, Mail, Lock, Eye, EyeOff, AlertCircle, Loader2, Zap, ArrowRight } from 'lucide-react';
+import { Building2, Mail, Lock, Eye, EyeOff, AlertCircle, Loader2, Zap, ArrowRight, Check } from 'lucide-react';
 import useAppStore from '../../stores/useAppStore';
 import { loginService } from '../../services/login.service';
 import '../../styles/login/login.css';
@@ -25,7 +25,23 @@ const LoginPage = () => {
     const userRef = useRef(null);
     const passwordRef = useRef(null);
 
+    // Load saved credentials on mount
     useEffect(() => {
+        const saved = localStorage.getItem('remembered_user');
+        if (saved) {
+            try {
+                const { MerchantName, UserName, Password } = JSON.parse(saved);
+                setFormData(prev => ({
+                    ...prev,
+                    MerchantName: MerchantName || '',
+                    UserName: UserName || '',
+                    Password: Password || '',
+                    IsRemember: true
+                }));
+            } catch (e) {
+                console.error('Failed to parse remembered user', e);
+            }
+        }
         merchantRef.current?.focus();
     }, []);
 
@@ -71,13 +87,36 @@ const LoginPage = () => {
 
         try {
             const response = await loginService.loginV4(formData);
-            const token = response.Data?.AccessToken || response.token;
-            const userData = response.Data?.UserInfo || response.user || { name: formData.UserName };
+
+            // Extract token and user info based on the provided JSON structure
+            // Using || ensures compatibility if the API wraps the response in a 'Data' property
+            const token = response.AccessToken || response.Data?.AccessToken;
+            const userData = {
+                MerchantName: response.MerchantName,
+                FullName: response.FullName,
+                UserGuid: response.UserGuid,
+                Avatar: response.Avatar,
+                Role: response.Role,
+                // Spread the rest of the response to capture any extra metadata
+                ...response
+            };
 
             if (token) {
                 localStorage.setItem('token', token);
+
+                // Handle Remember Me logic
+                if (formData.IsRemember) {
+                    localStorage.setItem('remembered_user', JSON.stringify({
+                        MerchantName: formData.MerchantName,
+                        UserName: formData.UserName,
+                        Password: formData.Password
+                    }));
+                } else {
+                    localStorage.removeItem('remembered_user');
+                }
+
                 setUser(userData);
-                navigate('/');
+                navigate('/dashboard');
             } else {
                 setApiError('Invalid response from server');
             }
@@ -101,9 +140,11 @@ const LoginPage = () => {
                 </div>
 
                 {apiError && (
-                    <div className="bg-red-50 border border-red-100 text-red-600 p-5 rounded-2xl flex items-center gap-4 mb-8 text-sm font-semibold animate-fade-in">
-                        <AlertCircle size={22} className="flex-shrink-0" />
-                        <span>{apiError}</span>
+                    <div className="error-alert">
+                        <div className="error-alert-icon">
+                            <AlertCircle size={18} />
+                        </div>
+                        <span className="error-alert-message">{apiError}</span>
                     </div>
                 )}
 
@@ -169,7 +210,20 @@ const LoginPage = () => {
                         {errors.Password && <p className="text-xs text-red-500 mt-2 font-bold ml-1">{errors.Password}</p>}
                     </div>
 
+                    <label className="remember-me">
+                        <input
+                            type="checkbox"
+                            checked={formData.IsRemember}
+                            onChange={(e) => setFormData(prev => ({ ...prev, IsRemember: e.target.checked }))}
+                        />
+                        <div className="checkbox-custom">
+                            <Check className="checkbox-icon" size={14} strokeWidth={4} />
+                        </div>
+                        <span className="remember-label">Remember me</span>
+                    </label>
+
                     <div className="mt-10">
+
                         <button
                             type="submit"
                             disabled={isLoading}
