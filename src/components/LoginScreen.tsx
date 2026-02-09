@@ -47,13 +47,6 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, onSignUp, themeState
                         </div>
 
                         <div className="z-10 relative">
-                            {/* <div className="mb-8 inline-flex items-center gap-2 py-2 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white shadow-sm">
-                                <ShieldCheck size={16} />
-                                <span className="text-[10px] font-black tracking-widest uppercase">
-                                    Enterprise Grade Security
-                                </span>
-                            </div> */}
-
                             <h1 className="text-white text-5xl font-extrabold leading-[1.1] mb-6 drop-shadow-xl">
                                 Design your business <br /> <span className="text-white/70 italic">at light speed.</span>
                             </h1>
@@ -117,12 +110,9 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, onSignUp, themeState
                         </div>
 
                         <div className="w-full max-w-md relative z-10">
-                            <div className="text-center mb-10 flex flex-col items-center">
-                                <div className="w-16 h-16 bg-gray-900 dark:bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg transform -rotate-3 transition-colors duration-300">
-                                    <Zap size={32} className="text-white" fill="currentColor" />
-                                </div>
-                                <h1 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-2 tracking-tight transition-colors duration-300">Welcome Back</h1>
-                                <p className="text-gray-500 dark:text-gray-400 transition-colors duration-300">Please enter your workspace details to continue.</p>
+                            <div className="mb-12">
+                                <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-3 tracking-tight">Login to Dashboard</h2>
+                                <p className="text-slate-500 dark:text-gray-400 font-medium">Please enter your workspace details to continue.</p>
                             </div>
 
                             <LoginForm
@@ -133,18 +123,23 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, onSignUp, themeState
                                 error={error}
                             />
 
-                            <div className="mt-8 text-center">
-                                <p className="text-xs text-gray-400 dark:text-gray-500">
-                                    By signing in, you agree to our <a href="#" className="underline hover:text-gray-900 dark:hover:text-gray-300 transition-colors">Terms of Service</a>
-                                </p>
-                            </div>
+                            {/* <div className="mt-12 flex items-center justify-between text-[11px] font-bold text-slate-400 dark:text-gray-500 border-t border-slate-50 dark:border-slate-800 pt-8">
+                                <div className="flex items-center gap-4">
+                                    <a href="#" className="hover:text-slate-900 dark:hover:text-white transition-colors uppercase tracking-widest">Privacy Policy</a>
+                                    <a href="#" className="hover:text-slate-900 dark:hover:text-white transition-colors uppercase tracking-widest">Support</a>
+                                </div>
+                                <div className="flex items-center gap-1">
+                                    <Globe2 size={12} />
+                                    <span className="uppercase tracking-widest">English (US)</span>
+                                </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* Bottom Signature */}
-            {/* <p className="mt-8 text-slate-400 text-xs font-bold tracking-[0.2em] uppercase opacity-50">
+            {/* <p className="mt-8 text-slate-400 dark:text-gray-500 text-xs font-bold tracking-[0.2em] uppercase opacity-50">
                 Powered by Antigravity AI &copy; 2026
             </p> */}
 
