@@ -17,15 +17,10 @@ interface LoginScreenProps {
 
 const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, onSignUp, themeState, error, isLoading, showClassNames }) => {
 
-    const [formData, setFormData] = useState({ businessType: '' });
-    const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-    const businessTypes = ["Retail & E-commerce", "Healthcare & Medical", "Finance & Banking", "Food & Beverage", "Technology & SaaS"];
-
     const handleLoginSubmit = (merchant: string, email: string, password: string, rememberMe: boolean) => {
         onLogin(merchant, email, password, rememberMe);
     };
 
-    const toggleDropdown = (id: string) => () => setActiveDropdown(prev => prev === id ? null : id);
     const safeTheme = themeState;
     const isExtracting = isLoading;
     const readOnly = false;
@@ -72,23 +67,6 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, onSignUp, themeState
 
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col justify-center relative bg-white dark:bg-slate-950 transition-colors duration-300 h-full overflow-y-auto">
-                    <div className="absolute top-0 right-0 z-10">
-                        <ContainerDevWrapper showClassNames={showClassNames} identity={{ displayName: "BusinessTypeSelect", type: "Field", value: formData.businessType, filePath: "state.formData.businessType" }}>
-                            <CustomDropdown
-                                label="Business Type"
-                                value={formData.businessType}
-                                options={businessTypes}
-                                onChange={(val) => setFormData({ ...formData, businessType: val })}
-                                placeholder="Select Type"
-                                icon={Briefcase}
-                                themeState={safeTheme}
-                                isOpen={activeDropdown === 'businessType'}
-                                onToggle={toggleDropdown('businessType')}
-                                disabled={isExtracting || readOnly}
-                                required
-                            />
-                        </ContainerDevWrapper>
-                    </div>
                     {/* Main Content Area */}
                     <div className="flex-1 flex items-center justify-center relative overflow-hidden px-4 bg-white dark:bg-slate-950">
 
@@ -100,11 +78,11 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, onSignUp, themeState
 
                         <div className="w-full max-w-md p-8 md:p-12 relative z-10">
                             <div className="text-center mb-10 flex flex-col items-center">
-                                <div className="w-16 h-16 bg-gray-900 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg transform -rotate-3">
+                                <div className="w-16 h-16 bg-gray-900 dark:bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg transform -rotate-3 transition-colors duration-300">
                                     <Zap size={32} className="text-white" fill="currentColor" />
                                 </div>
-                                <h1 className="text-3xl font-extrabold text-gray-900 mb-2 tracking-tight">Welcome Back</h1>
-                                <p className="text-gray-500">Sign in to manage your design system</p>
+                                <h1 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-2 tracking-tight transition-colors duration-300">Welcome Back</h1>
+                                <p className="text-gray-500 dark:text-gray-400 transition-colors duration-300">Sign in to manage your design system</p>
                             </div>
 
                             <LoginForm
@@ -116,8 +94,8 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, onSignUp, themeState
                             />
 
                             <div className="mt-8 text-center">
-                                <p className="text-xs text-gray-400">
-                                    By signing in, you agree to our <a href="#" className="underline hover:text-gray-900">Terms of Service</a>
+                                <p className="text-xs text-gray-400 dark:text-gray-500">
+                                    By signing in, you agree to our <a href="#" className="underline hover:text-gray-900 dark:hover:text-gray-300">Terms of Service</a>
                                 </p>
                             </div>
 

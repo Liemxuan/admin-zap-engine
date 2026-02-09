@@ -30,6 +30,8 @@ export const LoginForm: React.FC<LoginFormProps> = ({
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
 
+  const [touched, setTouched] = useState({ merchant: false, email: false, password: false });
+
   const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
@@ -68,6 +70,8 @@ export const LoginForm: React.FC<LoginFormProps> = ({
 
     if (!hasError) {
       onSubmit(merchantName, email, password, rememberMe);
+    } else {
+      setTouched({ merchant: true, email: true, password: true });
     }
   };
 
@@ -84,9 +88,13 @@ export const LoginForm: React.FC<LoginFormProps> = ({
           themeState={themeState}
           label="Merchant Name"
           value={merchantName}
-          onChange={(e) => setMerchantName(e.target.value.toLowerCase().replace(/[^a-z0-9-]/g, ''))}
-          icon={User} // Using Mail for now, could be Building if available
-          hasError={!!merchantError}
+          onChange={(e) => {
+            setMerchantName(e.target.value.toLowerCase().replace(/[^a-z0-9-]/g, ''));
+            if (touched.merchant) setMerchantError(e.target.value ? '' : 'Merchant name is required');
+          }}
+          onBlur={() => setTouched(prev => ({ ...prev, merchant: true }))}
+          icon={User}
+          hasError={touched.merchant && !!merchantError}
           errorText={merchantError}
           placeholder="e.g. zap-vn"
         />
@@ -96,9 +104,17 @@ export const LoginForm: React.FC<LoginFormProps> = ({
           label="Email Address"
           type="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => {
+            setEmail(e.target.value);
+            if (touched.email) {
+              if (!e.target.value) setEmailError('Email is required');
+              else if (!validateEmail(e.target.value)) setEmailError('Please enter a valid email');
+              else setEmailError('');
+            }
+          }}
+          onBlur={() => setTouched(prev => ({ ...prev, email: true }))}
           icon={Mail}
-          hasError={!!emailError}
+          hasError={touched.email && !!emailError}
           errorText={emailError}
           placeholder="name@company.com"
         />
@@ -109,11 +125,19 @@ export const LoginForm: React.FC<LoginFormProps> = ({
             label="Password"
             type={showPassword ? "text" : "password"}
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) => {
+              setPassword(e.target.value);
+              if (touched.password) {
+                if (!e.target.value) setPasswordError('Password is required');
+                else if (e.target.value.length < 6) setPasswordError('Password must be at least 6 characters');
+                else setPasswordError('');
+              }
+            }}
+            onBlur={() => setTouched(prev => ({ ...prev, password: true }))}
             icon={Lock}
             rightIcon={showPassword ? EyeOff : Eye}
             onRightIconClick={() => setShowPassword(!showPassword)}
-            hasError={!!passwordError}
+            hasError={touched.password && !!passwordError}
             errorText={passwordError}
             placeholder="••••••••"
           />
@@ -147,12 +171,12 @@ export const LoginForm: React.FC<LoginFormProps> = ({
         />
       </form>
 
-      <div className="mt-8 text-center bg-gray-50 rounded-2xl p-4 border border-gray-100">
-        <p className="text-sm text-gray-500">
+      <div className="mt-8 text-center bg-gray-50 dark:bg-slate-900 rounded-2xl p-4 border border-gray-100 dark:border-slate-800 transition-colors duration-300">
+        <p className="text-sm text-gray-500 dark:text-gray-400">
           Don't have an account?{' '}
           <button
             onClick={onSignUpClick}
-            className="font-bold hover:underline"
+            className="font-bold hover:underline transition-all active:scale-95"
             style={{ color: themeState.primary }}
           >
             Create Account
