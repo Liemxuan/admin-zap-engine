@@ -72,7 +72,6 @@
 @apply bg-background text-foreground;
 
 body {
-
     font-family: var(--font-family);
     font-size: var(--fs-p);
     font-weight: var(--fw-p);
