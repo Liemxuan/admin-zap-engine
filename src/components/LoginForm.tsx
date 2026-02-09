@@ -3,7 +3,7 @@ import { ThemeState } from '../types';
 import { StandardInput } from './atoms/StandardInput';
 import { Button } from './atoms/Button';
 import { Checkbox } from './atoms/Checkbox';
-import { Mail, Lock, ArrowRight, Eye, EyeOff, User } from 'lucide-react';
+import { Mail, Lock, ArrowRight, Eye, EyeOff, Building2, AlertCircle } from 'lucide-react';
 
 interface LoginFormProps {
   themeState: ThemeState;
@@ -78,22 +78,22 @@ export const LoginForm: React.FC<LoginFormProps> = ({
   return (
     <div className="w-full">
       {error && (
-        <div className="mb-6 p-4 rounded-xl bg-red-50 border border-red-100 text-red-600 text-sm font-medium flex items-center gap-3 animate-fade-in">
-          <Mail className="w-5 h-5 flex-shrink-0" /> {/* Should be AlertCircle but Mail is available */}
+        <div className="mb-6 p-4 rounded-2xl bg-red-50 border border-red-100 text-red-600 text-sm font-bold flex items-center gap-3 animate-fade-in shadow-sm">
+          <AlertCircle className="w-5 h-5 flex-shrink-0" />
           <span>{error}</span>
         </div>
       )}
-      <form onSubmit={handleSubmit} className="space-y-5">
+      <form onSubmit={handleSubmit} className="space-y-6">
         <StandardInput
           themeState={themeState}
-          label="Merchant Name"
+          label="Merchant Domain"
           value={merchantName}
           onChange={(e) => {
             setMerchantName(e.target.value.toLowerCase().replace(/[^a-z0-9-]/g, ''));
             if (touched.merchant) setMerchantError(e.target.value ? '' : 'Merchant name is required');
           }}
           onBlur={() => setTouched(prev => ({ ...prev, merchant: true }))}
-          icon={User}
+          icon={Building2}
           hasError={touched.merchant && !!merchantError}
           errorText={merchantError}
           placeholder="e.g. zap-vn"
@@ -146,17 +146,18 @@ export const LoginForm: React.FC<LoginFormProps> = ({
         <div className="flex items-center justify-between py-2">
           <Checkbox
             id="remember-me"
-            label="Remember me"
+            label="Remember this device"
             checked={rememberMe}
             onChange={setRememberMe}
             themeState={themeState}
           />
           <button
             type="button"
-            className="text-xs font-semibold hover:underline"
+            className="text-xs font-bold hover:underline transition-all"
             style={{ color: themeState.primary }}
+            onClick={() => alert('Please contact your administrator to reset your password.')}
           >
-            Forgot password?
+            Forgot Password?
           </button>
         </div>
 
@@ -167,7 +168,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({
           type="submit"
           disabled={isLoading}
           iconTrailing={isLoading ? undefined : ArrowRight}
-          className="w-full py-4 text-base shadow-lg shadow-purple-100"
+          className="w-full py-5 text-base shadow-xl shadow-purple-500/10"
         />
       </form>
 
@@ -176,10 +177,14 @@ export const LoginForm: React.FC<LoginFormProps> = ({
           Don't have an account?{' '}
           <button
             onClick={onSignUpClick}
+<<<<<<< HEAD
             className="font-bold hover:underline transition-all active:scale-95"
+=======
+            className="font-bold hover:underline transition-all active:scale-95 text-purple-600"
+>>>>>>> 559f84ed05b85853f2b7cb6df58fbb377020e43c
             style={{ color: themeState.primary }}
           >
-            Create Account
+            Create Business Account
           </button>
         </p>
       </div>

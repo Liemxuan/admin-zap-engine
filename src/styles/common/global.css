@@ -18,11 +18,10 @@
     --radius-3xl: calc(var(--radius) + 12px);
 }
 
-
 :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
+    <<<<<<< HEAD --primary: 222.2 47.4% 11.2%;
     --secondary: 210 40% 96.1%;
     --accent: 210 40% 96.1%;
     --radius: 0.5rem;
@@ -41,13 +40,15 @@ body {
 }
 
 :root {
-    --primary: #7E22CE;
+    =======>>>>>>>559f84ed05b85853f2b7cb6df58fbb377020e43c --primary: #7E22CE;
     --primary-hover: #711fba;
+    --secondary: 210 40% 96.1%;
+    --accent: #10b981;
+    --radius: 0.5rem;
     --bg-main: #f3f4f9;
     --bg-card: #FFFFFF;
     --text-main: #111827;
     --text-muted: #6b7280;
-    --accent: #10b981;
     --border: #e5e7eb;
 
     /* Typography from theme_default.json */
@@ -72,11 +73,20 @@ body {
     --fw-label: 700;
 }
 
-* {
+[data-theme='dark'] {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    /* --primary: 210 40% 98%; // Avoid overriding the purple primary if possible */
+    --secondary: 217.2 32.6% 17.5%;
+    --accent: 217.2 32.6% 17.5%;
+}
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
+@apply bg-background text-foreground;
 
 body {
     font-family: var(--font-family);
@@ -144,6 +154,13 @@ body {
 
 .mesh-gradient {
     background-color: #8B5CF6;
-    background-image: radial-gradient(at 0% 0%, hsla(253, 80%, 80%, 1) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(225, 80%, 70%, 1) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(300, 80%, 75%, 1) 0, transparent 50%), radial-gradient(at 0% 50%, hsla(190, 90%, 70%, 1) 0, transparent 50%), radial-gradient(at 100% 50%, hsla(270, 90%, 70%, 1) 0, transparent 50%), radial-gradient(at 0% 100%, hsla(240, 90%, 75%, 1) 0, transparent 50%), radial-gradient(at 50% 100%, hsla(200, 90%, 70%, 1) 0, transparent 50%), radial-gradient(at 100% 100%, hsla(280, 90%, 75%, 1) 0, transparent 50%);
+    background-image: radial-gradient(at 0% 0%, hsla(253, 80%, 80%, 1) 0, transparent 50%),
+        radial-gradient(at 50% 0%, hsla(225, 80%, 70%, 1) 0, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(300, 80%, 75%, 1) 0, transparent 50%),
+        radial-gradient(at 0% 50%, hsla(190, 90%, 70%, 1) 0, transparent 50%),
+        radial-gradient(at 100% 50%, hsla(270, 90%, 70%, 1) 0, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(240, 90%, 75%, 1) 0, transparent 50%),
+        radial-gradient(at 50% 100%, hsla(200, 90%, 70%, 1) 0, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(280, 90%, 75%, 1) 0, transparent 50%);
     transition: background-image 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
