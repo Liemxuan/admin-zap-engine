@@ -481,9 +481,9 @@ const SetupPage: React.FC<SetupPageProps> = ({
                 } else {
                     setProgress(20);
                     setStatusText("Loading standard assets...");
-                    const { standardUiKitData } = await import('./standardUiKit');
-                    generatedData = standardUiKitData;
-                    await new Promise(res => setTimeout(res, 1000));
+                    // Load standard assets
+                    const { standardUiKitData: data } = await import('./standardUiKit');
+                    generatedData = data;
                 }
 
                 // Fallback Logo Logic
