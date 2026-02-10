@@ -8,17 +8,19 @@ import {
     Settings,
     Command,
     ExternalLink,
-    Sparkles
+    Sparkles,
+    LogOut
 } from 'lucide-react';
 import { useStore } from '../../store';
 import { cn } from '../../lib/utils';
 
 interface DashboardHeaderProps {
     onMenuClick: () => void;
+    onLogout?: () => void;
     className?: string;
 }
 
-export const DashboardHeader: React.FC<DashboardHeaderProps> = ({ onMenuClick, className }) => {
+export const DashboardHeader: React.FC<DashboardHeaderProps> = ({ onMenuClick, onLogout, className }) => {
     const theme = useStore(state => state.computedTheme);
     const [isSearchFocused, setIsSearchFocused] = React.useState(false);
 
@@ -82,6 +84,14 @@ export const DashboardHeader: React.FC<DashboardHeaderProps> = ({ onMenuClick, c
                     <div className="w-px h-4 bg-slate-200 dark:bg-slate-700 mx-1" />
                     <button className="p-2 text-slate-400 hover:text-purple-600 transition-colors">
                         <ExternalLink size={18} />
+                    </button>
+                    <div className="w-px h-4 bg-slate-200 dark:bg-slate-700 mx-1" />
+                    <button
+                        onClick={onLogout}
+                        className="p-2 text-slate-400 hover:text-red-500 transition-colors"
+                        title="Logout"
+                    >
+                        <LogOut size={18} />
                     </button>
                 </div>
 

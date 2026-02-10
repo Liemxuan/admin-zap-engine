@@ -21,26 +21,7 @@
 :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-    <<<<<<< HEAD --primary: 222.2 47.4% 11.2%;
-    --secondary: 210 40% 96.1%;
-    --accent: 210 40% 96.1%;
-    --radius: 0.5rem;
-}
-
-[data-theme='dark'] {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --secondary: 217.2 32.6% 17.5%;
-    --accent: 217.2 32.6% 17.5%;
-}
-
-body {
-    @apply bg-background text-foreground;
-}
-
-:root {
-    =======>>>>>>>559f84ed05b85853f2b7cb6df58fbb377020e43c --primary: #7E22CE;
+    --primary: #7E22CE;
     --primary-hover: #711fba;
     --secondary: 210 40% 96.1%;
     --accent: #10b981;
@@ -76,7 +57,7 @@ body {
 [data-theme='dark'] {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-    /* --primary: 210 40% 98%; // Avoid overriding the purple primary if possible */
+    /* --primary: 210 40% 98%; */
     --secondary: 217.2 32.6% 17.5%;
     --accent: 217.2 32.6% 17.5%;
 }
@@ -86,9 +67,8 @@ body {
     padding: 0;
     box-sizing: border-box;
 } */
-@apply bg-background text-foreground;
-
 body {
+    @apply bg-background text-foreground;
     font-family: var(--font-family);
     font-size: var(--fs-p);
     font-weight: var(--fw-p);

@@ -123,32 +123,18 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin, onSignUp, themeState
                                 error={error}
                             />
 
-<<<<<<< HEAD
-    <div className="mt-8 text-center">
-        <p className="text-xs text-gray-400 dark:text-gray-500">
-            By signing in, you agree to our <a href="#" className="underline hover:text-gray-900 dark:hover:text-gray-300">Terms of Service</a>
-        </p>
-    </div>
-
-=======
-                            {/* <div className="mt-12 flex items-center justify-between text-[11px] font-bold text-slate-400 dark:text-gray-500 border-t border-slate-50 dark:border-slate-800 pt-8">
-                                <div className="flex items-center gap-4">
-                                    <a href="#" className="hover:text-slate-900 dark:hover:text-white transition-colors uppercase tracking-widest">Privacy Policy</a>
-                                    <a href="#" className="hover:text-slate-900 dark:hover:text-white transition-colors uppercase tracking-widest">Support</a>
-                                </div>
-                                <div className="flex items-center gap-1">
-                                    <Globe2 size={12} />
-                                    <span className="uppercase tracking-widest">English (US)</span>
-                                </div>
-                            </div> */}
->>>>>>> 559f84ed05b85853f2b7cb6df58fbb377020e43c
+                            <div className="mt-8 text-center">
+                                <p className="text-xs text-gray-400 dark:text-gray-500">
+                                    By signing in, you agree to our <a href="#" className="underline hover:text-gray-900 dark:hover:text-gray-300">Terms of Service</a>
+                                </p>
+                            </div>
                         </div >
                     </div >
                 </div >
             </div >
 
-    {/* Bottom Signature */ }
-{/* <p className="mt-8 text-slate-400 dark:text-gray-500 text-xs font-bold tracking-[0.2em] uppercase opacity-50">
+            {/* Bottom Signature */}
+            {/* <p className="mt-8 text-slate-400 dark:text-gray-500 text-xs font-bold tracking-[0.2em] uppercase opacity-50">
                 Powered by Antigravity AI &copy; 2026
             </p> */}
 

@@ -177,11 +177,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({
           Don't have an account?{' '}
           <button
             onClick={onSignUpClick}
-<<<<<<< HEAD
-            className="font-bold hover:underline transition-all active:scale-95"
-=======
             className="font-bold hover:underline transition-all active:scale-95 text-purple-600"
->>>>>>> 559f84ed05b85853f2b7cb6df58fbb377020e43c
             style={{ color: themeState.primary }}
           >
             Create Business Account

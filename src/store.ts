@@ -3,6 +3,7 @@ import { persist } from 'zustand/middleware';
 import { ProjectConfig, ThemeState, DocPage, IconEntry, Tab } from './types';
 import { standardUiKitData } from './components/standardUiKit';
 import pkg from '../package.json';
+import { STORAGE_KEYS } from './utils/const';
 
 interface ZapState {
     // Role Awareness
@@ -39,6 +40,7 @@ interface ZapState {
     setActiveDocPageId: (id: string | null) => void;
     setIsAuthenticated: (val: boolean) => void;
     setIsSetupComplete: (val: boolean) => void;
+    logout: () => void;
 
     // Helpers
     updateComputedTheme: () => void;
@@ -158,6 +160,10 @@ export const useStore = create<ZapState>()(
             setActiveDocPageId: (id) => set({ activeDocPageId: id }),
             setIsAuthenticated: (val) => set({ isAuthenticated: val }),
             setIsSetupComplete: (val) => set({ isSetupComplete: val }),
+            logout: () => {
+                localStorage.removeItem(STORAGE_KEYS.TOKEN);
+                set({ isAuthenticated: false });
+            },
 
             updateComputedTheme: () => {
                 const { masterConfig, merchantOverride } = get();
