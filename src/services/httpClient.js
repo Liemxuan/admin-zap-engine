@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { STORAGE_KEYS } from '../utils/const';
 
 const httpClient = axios.create({
     baseURL: import.meta.env.VITE_API_BASE_URL || '/api-proxy',
@@ -12,7 +13,7 @@ const httpClient = axios.create({
 
 httpClient.interceptors.request.use(
     (config) => {
-        const token = localStorage.getItem('token');
+        const token = localStorage.getItem(STORAGE_KEYS.TOKEN);
         if (token) {
             config.headers.Authorization = `Bearer ${token}`;
         }
@@ -30,7 +31,7 @@ httpClient.interceptors.response.use(
         const errorMessage = errorData.Message || errorData.message || 'An unexpected error occurred';
 
         if (error.response?.status === 401) {
-            localStorage.removeItem('token');
+            localStorage.removeItem(STORAGE_KEYS.TOKEN);
             // Only redirect if not already on login page
             if (!window.location.pathname.includes('/login')) {
                 window.location.href = '/login';

@@ -4,6 +4,7 @@ import useAppStore from '../../stores/useAppStore';
 import { useStore } from '../../store';
 import { loginService } from '../../services/login.service';
 import LoginScreen from '../../components/LoginScreen';
+import { STORAGE_KEYS } from '../../utils/const';
 
 const LoginPage = () => {
     const navigate = useNavigate();
@@ -42,12 +43,12 @@ const LoginPage = () => {
             if (!userData) userData = { name: username };
 
             if (token) {
-                localStorage.setItem('token', token);
+                localStorage.setItem(STORAGE_KEYS.TOKEN, token);
 
                 if (remember) {
-                    localStorage.setItem('remembered_user', JSON.stringify(formData));
+                    localStorage.setItem(STORAGE_KEYS.REMEMBERED_USER, JSON.stringify(formData));
                 } else {
-                    localStorage.removeItem('remembered_user');
+                    localStorage.removeItem(STORAGE_KEYS.REMEMBERED_USER);
                 }
 
                 setUser(userData);
